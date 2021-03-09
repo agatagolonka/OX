@@ -1,0 +1,22 @@
+
+k
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(Ïé»åùÿÿÿÿ
+R
+java:S4973"9Use the "equals" method if value comparison was intended.(·Í¶ÿÿÿÿÿ
+r	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(˜Ğ»†úÿÿÿÿ
+R
+java:S4973"9Use the "equals" method if value comparison was intended.(·Í¶ÿÿÿÿÿ
+M
+java:S4973"9Use the "equals" method if value comparison was intended.(’şõŒ
+R
+java:S4973"9Use the "equals" method if value comparison was intended.(ˆ¯˜¿ÿÿÿÿÿ
+M
+java:S4973"9Use the "equals" method if value comparison was intended.(’şõŒ
+P
+java:S1128"=Remove this unused import 'java.util.InputMismatchException'.(İ§1
+M
+java:S4973"9Use the "equals" method if value comparison was intended.(Ùö¢ê
+M
+java:S4973"9Use the "equals" method if value comparison was intended.(Ùö¢ê
+R
+java:S4973"9Use the "equals" method if value comparison was intended.(ˆ¯˜¿ÿÿÿÿÿ

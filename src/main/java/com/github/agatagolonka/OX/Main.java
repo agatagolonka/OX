@@ -7,8 +7,8 @@ public class Main {
 
         OXBoard displayedBoard = new OXBoard();
         OXVictoryCondition checkWinBoard = new OXVictoryCondition();
-        OXMove player = new OXMove();
-        player.setSign('x');
+        char sign = 'x';
+        OXMove player = new OXMove(sign);
         Field field= new Field();
 
 

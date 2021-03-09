@@ -13,6 +13,7 @@ public class OXBoard {
     }
 
     public void setBoard(char toReplace, char sign) {
+
         this.board = this.board.replace(toReplace, sign);
 
     }
