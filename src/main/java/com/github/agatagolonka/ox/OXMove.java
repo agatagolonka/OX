@@ -2,7 +2,7 @@ package com.github.agatagolonka.ox;
 
 class OXMove {
 
-    private char[] signs;
+    private final char[] signs;
     private char actualSign;
 
     public OXMove(char[] signs) {

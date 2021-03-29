@@ -29,7 +29,7 @@ class OXVictoryCondition {
     public boolean checkField(int i) {
 
         if (i > 0 || i < 10) {
-            return this.boardToVictoryCondition.get(i) == 'o' || this.boardToVictoryCondition.get(i) == 'x';
+            return this.boardToVictoryCondition.get(i) == 'O' || this.boardToVictoryCondition.get(i) == 'X';
         } else {
             throw new IndexOutOfBoundsException("Give a correct number 1-9");
         }
@@ -42,7 +42,7 @@ class OXVictoryCondition {
     public boolean checkWinner() {
         int row = 0;
         int col = 0;
-/*
+
         if ((this.boardToVictoryCondition.get(0) == this.boardToVictoryCondition.get(4) && this.boardToVictoryCondition.get(4) == this.boardToVictoryCondition.get(8))) {
             this.isWinner = true;
         } else if (this.boardToVictoryCondition.get(2) == this.boardToVictoryCondition.get(4) && this.boardToVictoryCondition.get(4) == this.boardToVictoryCondition.get(6)) {
@@ -61,9 +61,18 @@ class OXVictoryCondition {
                 }
                 col = col + 1;
             }
-        }*/
+        }
         return this.isWinner;
     }
 
 
+    public boolean checkOccupiedAllFields() {
+        List tmp= boardToVictoryCondition.stream()
+                .filter(n->n!='O'&&n!='X')
+                .collect(Collectors.toList());
+        if(tmp.size()<1)
+            return true;
+        else return false;
+
+    }
 }

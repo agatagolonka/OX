@@ -7,9 +7,9 @@ class OXBoard {
     public OXBoard(int size) {
         if (size == 3) {
             this.board = """
-                      1|2|3 
-                      4|5|6
-                      7|8|9
+                       1| 2| 3 
+                       4| 5| 6
+                       7| 8| 9
                     """;
         } else if (size == 5) {
             this.board = """
@@ -28,8 +28,12 @@ class OXBoard {
     }
 
     public void setBoard(Integer toReplace, Character sign) {
+        if(toReplace>9) {
+            this.board = this.board.replace(toReplace.toString(), " "+sign.toString());
+        }
+        else{
+            this.board = this.board.replace(" "+toReplace.toString(), " "+sign.toString());
 
-        this.board = this.board.replace(toReplace.toString(), sign.toString());
-
+        }
     }
 }
