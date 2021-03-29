@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b564bec5-e24d-433a-81f7-ba3bda948e89" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/agatagolonka/ox/OXBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/agatagolonka/ox/OXBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/agatagolonka/ox/OXMove.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/agatagolonka/ox/OXMove.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/agatagolonka/ox/OXVictoryCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/agatagolonka/ox/OXVictoryCondition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/agatagolonka/ox/PlayOX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/agatagolonka/ox/PlayOX.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/agatagolonka/OX/Field.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/agatagolonka/OX/OXMove.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/agatagolonka/OX/OXMove.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/agatagolonka/OX/OXVictoryCondition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/agatagolonka/OX/OXVictoryCondition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/agatagolonka/OX/OXBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/agatagolonka/OX/OXBoard.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +146,8 @@
     <MESSAGE value="actualization" />
     <MESSAGE value="Board 3x3 and 5x5" />
     <MESSAGE value="Adding UInterfaces" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding UInterfaces" />
+    <MESSAGE value="adding remis" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding remis" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -172,6 +166,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/github/agatagolonka/ox/OXVictoryCondition.java</url>
           <line>72</line>
           <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/github/agatagolonka/ox/OXVictoryCondition.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

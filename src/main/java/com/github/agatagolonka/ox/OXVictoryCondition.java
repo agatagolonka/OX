@@ -40,7 +40,7 @@ class OXVictoryCondition {
     }
 
     public boolean checkWinner() {
-        int row = 0;
+        /*int row = 0;
         int col = 0;
 
         if ((this.boardToVictoryCondition.get(0) == this.boardToVictoryCondition.get(4) && this.boardToVictoryCondition.get(4) == this.boardToVictoryCondition.get(8))) {
@@ -61,7 +61,7 @@ class OXVictoryCondition {
                 }
                 col = col + 1;
             }
-        }
+        }*/
         return this.isWinner;
     }
 
