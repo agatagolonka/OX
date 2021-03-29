@@ -32,7 +32,7 @@ class OXBoard {
             this.board = this.board.replace(toReplace.toString(), " "+sign.toString());
         }
         else{
-            this.board = this.board.replace(" "+toReplace.toString()+"|", " "+sign.toString()+"|");
+            this.board = this.board.replace(" "+toReplace.toString(), " "+sign.toString());
 
         }
     }
