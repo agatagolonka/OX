@@ -67,8 +67,8 @@ class CommunicationWithUser implements UserInterface {
         Scanner skaner = new Scanner(System.in);
         int chooseSigns = 0;
         System.out.println("Choose signs:" +
-                "Click 1 for 'O' and 'X'" +
-                "Click 2 for '+' and '-'");
+                "Click 1 for signs 'O' and 'X'\n" +
+                "Click 2 for signs'+' and '-'");
         boolean validNumber = false;
         char[] signs = null;
         while (!validNumber) {
