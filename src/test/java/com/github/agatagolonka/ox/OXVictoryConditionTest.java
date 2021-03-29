@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 
 public class OXVictoryConditionTest {
     int size=3;
+    VictoryLists victory=new VictoryLists(size);
 
     @Test
     public void TestVictoryRow(){
@@ -12,7 +13,7 @@ public class OXVictoryConditionTest {
         board.setBoardToVictoryCondition(0, 'x');
         board.setBoardToVictoryCondition(1, 'x');
         board.setBoardToVictoryCondition(2, 'x');
-        Assert.assertTrue(board.checkWinner());
+        Assert.assertTrue(board.checkWinner(victory));
     }
     @Test
     public void TestVictoryCol(){
@@ -20,7 +21,7 @@ public class OXVictoryConditionTest {
         board.setBoardToVictoryCondition(0, 'x');
         board.setBoardToVictoryCondition(3, 'x');
         board.setBoardToVictoryCondition(6, 'x');
-        Assert.assertTrue(board.checkWinner());
+        Assert.assertTrue(board.checkWinner(victory));
     }
     @Test
     public void TestVictoryDia(){
@@ -28,7 +29,7 @@ public class OXVictoryConditionTest {
         board.setBoardToVictoryCondition(0, 'x');
         board.setBoardToVictoryCondition(4, 'x');
         board.setBoardToVictoryCondition(8, 'x');
-        Assert.assertTrue(board.checkWinner());
+        Assert.assertTrue(board.checkWinner(victory));
     }
     @Test
     public void CheckFalseField(){

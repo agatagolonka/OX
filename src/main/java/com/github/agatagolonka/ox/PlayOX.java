@@ -4,6 +4,7 @@ public class PlayOX {
     private final CommunicationWithUser messagesToUser;
     private final OXBoard displayedBoard;
     private final OXVictoryCondition checkWinBoard;
+    private final VictoryLists victory;
     private final OXMove player;
 
     public PlayOX() {
@@ -12,6 +13,7 @@ public class PlayOX {
         int size = messagesToUser.chooseSizeBoard();
         this.displayedBoard = new OXBoard(size);
         this.checkWinBoard = new OXVictoryCondition(size);
+        this.victory=new VictoryLists(size);
         char[] signs = messagesToUser.chooseSigns();
         this.player = new OXMove(signs);
     }
@@ -19,7 +21,7 @@ public class PlayOX {
 
     public void play() {
 
-        while (!checkWinBoard.checkWinner()) {
+        while (!checkWinBoard.checkWinner(victory)) {
             if (checkWinBoard.checkOccupiedAllFields()) {
                 break;
             }
@@ -36,7 +38,7 @@ public class PlayOX {
             }
         }
 
-        if (checkWinBoard.checkWinner())
+        if (checkWinBoard.checkWinner(victory))
             messagesToUser.giveMessage("Winner is player with sign " + player.getSign());
         else
             messagesToUser.giveMessage("Sorry, all fields are occupied, Remis " + player.getSign());

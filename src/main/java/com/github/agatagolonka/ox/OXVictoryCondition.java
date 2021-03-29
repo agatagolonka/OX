@@ -12,7 +12,7 @@ class OXVictoryCondition {
 
     public OXVictoryCondition(int size) {
         this.size = size;
-        this.boardToVictoryCondition = IntStream.rangeClosed(1, size * size).boxed()
+        this.boardToVictoryCondition = IntStream.rangeClosed(1, size * size + 1).boxed()
                 .map(i -> Character.forDigit(i, size * size + 1))
                 .collect(Collectors.toList());
 
@@ -39,40 +39,57 @@ class OXVictoryCondition {
         this.boardToVictoryCondition.set(toReplace, sign);
     }
 
-    public boolean checkWinner() {
-        /*int row = 0;
-        int col = 0;
+    public boolean checkWinner(VictoryLists victory) {
 
-        if ((this.boardToVictoryCondition.get(0) == this.boardToVictoryCondition.get(4) && this.boardToVictoryCondition.get(4) == this.boardToVictoryCondition.get(8))) {
-            this.isWinner = true;
-        } else if (this.boardToVictoryCondition.get(2) == this.boardToVictoryCondition.get(4) && this.boardToVictoryCondition.get(4) == this.boardToVictoryCondition.get(6)) {
-            this.isWinner = true;
-        } else {
+        List<Integer> checkX = IntStream.rangeClosed(1, size * size - 1).boxed()
+                .map(n -> new PairNumber(n, boardToVictoryCondition.get(n)))
+                .filter(n -> n.getValue() == 'X')
+                .map(n -> n.getKey())
+                .collect(Collectors.toList());
 
-            while (row < 7) {
-                if (this.boardToVictoryCondition.get(0 + row) == this.boardToVictoryCondition.get(1 + row) && this.boardToVictoryCondition.get(1 + row) == this.boardToVictoryCondition.get(2 + row)) {
-                    this.isWinner = true;
-                }
-                row = row + 3;
-            }
-            while (col < 3) {
-                if (this.boardToVictoryCondition.get(0 + col) == this.boardToVictoryCondition.get(3 + col) && this.boardToVictoryCondition.get(3 + col) == this.boardToVictoryCondition.get(6 + col)) {
-                    this.isWinner = true;
-                }
-                col = col + 1;
-            }
-        }*/
+        List<Integer> checkO = IntStream.rangeClosed(1, size * size - 1).boxed()
+                .map(n -> new PairNumber(n, boardToVictoryCondition.get(n)))
+                .filter(n -> n.getValue() == 'O')
+                .map(n -> n.getKey())
+                .collect(Collectors.toList());
+
+        List<Integer> checkMinus = IntStream.rangeClosed(1, size * size - 1).boxed()
+                .map(n -> new PairNumber(n, boardToVictoryCondition.get(n)))
+                .filter(n -> n.getValue() == '-')
+                .map(n -> n.getKey())
+                .collect(Collectors.toList());
+
+        List<Integer> checkPlus = IntStream.rangeClosed(1, size * size - 1).boxed()
+                .map(n -> new PairNumber(n, boardToVictoryCondition.get(n)))
+                .filter(n -> n.getValue() == '+')
+                .map(n -> n.getKey())
+                .collect(Collectors.toList());
+
+        this.isWinner = victory.containsAll(checkX);
+        if (this.isWinner)
+            return this.isWinner;
+        this.isWinner = victory.containsAll(checkO);
+        if (this.isWinner)
+            return this.isWinner;
+        this.isWinner = victory.containsAll(checkMinus);
+        if (this.isWinner)
+            return this.isWinner;
+        this.isWinner = victory.containsAll(checkPlus);
+
         return this.isWinner;
     }
 
 
     public boolean checkOccupiedAllFields() {
-        List tmp= boardToVictoryCondition.stream()
-                .filter(n->n!='O'&&n!='X')
+        List tmp = boardToVictoryCondition.stream()
+                .filter(n -> n != 'O' && n != 'X')
+                .filter(n -> n != '-' && n != '+')
                 .collect(Collectors.toList());
-        if(tmp.size()<1)
+        if (tmp.size() < 1)
             return true;
         else return false;
 
     }
+
+
 }
