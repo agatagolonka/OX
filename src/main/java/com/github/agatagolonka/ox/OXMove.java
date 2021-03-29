@@ -6,8 +6,8 @@ class OXMove {
     private char actualSign;
 
     public OXMove(char[] signs) {
-        this.signs=signs;
-        this.actualSign=signs[0];
+        this.signs = signs;
+        this.actualSign = signs[0];
     }
 
     public char getSign() {

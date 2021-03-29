@@ -25,7 +25,7 @@ public class PlayOX {
             player.changePlayer();
             messagesToUser.giveMessage("Player " + player.getSign() + "Give a number of field");
 
-            int fieldName= messagesToUser.takeFieldName();
+            int fieldName = messagesToUser.takeFieldName();
             displayedBoard.setBoard(fieldName, player.getSign());
             checkWinBoard.setBoardToVictoryCondition(fieldName, player.getSign());
                /*   if (checkWinBoard.checkField(Character.getNumericValue(field.userField()) - 1)) {

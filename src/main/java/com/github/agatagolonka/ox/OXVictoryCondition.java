@@ -6,9 +6,17 @@ import java.util.stream.IntStream;
 
 class OXVictoryCondition {
 
+    private final int size;
     List<Character> boardToVictoryCondition;
     Boolean isWinner = false;
-    private final int size;
+
+    public OXVictoryCondition(int size) {
+        this.size = size;
+        this.boardToVictoryCondition = IntStream.rangeClosed(1, size * size).boxed()
+                .map(i -> Character.forDigit(i, size * size + 1))
+                .collect(Collectors.toList());
+
+    }
 
     public List<Character> getBoardToVictoryCondition() {
         return this.boardToVictoryCondition;
@@ -20,24 +28,15 @@ class OXVictoryCondition {
 
     public boolean checkField(int i) {
 
-    if(i>0||i<10) {
-        return this.boardToVictoryCondition.get(i) == 'o' || this.boardToVictoryCondition.get(i) == 'x';
-    }
-    else{
-        throw new IndexOutOfBoundsException("Give a correct number 1-9");
-    }
+        if (i > 0 || i < 10) {
+            return this.boardToVictoryCondition.get(i) == 'o' || this.boardToVictoryCondition.get(i) == 'x';
+        } else {
+            throw new IndexOutOfBoundsException("Give a correct number 1-9");
+        }
     }
 
     public void setBoardToVictoryCondition(int toReplace, char sign) {
         this.boardToVictoryCondition.set(toReplace, sign);
-    }
-
-    public OXVictoryCondition(int size) {
-        this.size = size;
-        this.boardToVictoryCondition = IntStream.rangeClosed(1, size*size).boxed()
-                .map(i -> Character.forDigit(i, size*size+1))
-                .collect(Collectors.toList());
-
     }
 
     public boolean checkWinner() {
