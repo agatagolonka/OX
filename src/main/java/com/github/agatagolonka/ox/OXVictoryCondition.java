@@ -74,10 +74,9 @@ class OXVictoryCondition {
 
     public boolean checkOccupiedAllFields() {
         List<Character> tmp = boardToVictoryCondition.stream()
-                .filter(n -> n != 'O' && n != 'X')
-                .filter(n -> n != '-' && n != '+')
+                .filter(n -> n != 'O' && n != 'X'&&n!='-'&&n!='+')
                 .collect(Collectors.toList());
-        if (tmp.isEmpty())
+        if (tmp.size()<2)
             return true;
         return false;
 
