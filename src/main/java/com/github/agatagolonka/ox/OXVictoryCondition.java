@@ -20,7 +20,7 @@ class OXVictoryCondition {
 
     boolean checkField(int i) {
 
-        if (i > 0 && i < 10) {
+        if (i > 0 && i < size*size+1) {
             return this.boardToVictoryCondition.get(i) == 'O' || this.boardToVictoryCondition.get(i) == 'X'||this.boardToVictoryCondition.get(i) == '+'||this.boardToVictoryCondition.get(i) == '-';
         } else {
             throw new IndexOutOfBoundsException("Give a correct number");
