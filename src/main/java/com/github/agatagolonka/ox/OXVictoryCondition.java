@@ -8,7 +8,7 @@ class OXVictoryCondition {
 
     private final int size;
     List<Character> boardToVictoryCondition;
-    Boolean isWinner = false;
+    boolean isWinner = false;
 
     public OXVictoryCondition(int size) {
         this.size = size;
@@ -18,20 +18,12 @@ class OXVictoryCondition {
 
     }
 
-    public List<Character> getBoardToVictoryCondition() {
-        return this.boardToVictoryCondition;
-    }
+    boolean checkField(int i) {
 
-    public char getField(int i) {
-        return this.boardToVictoryCondition.get(i);
-    }
-
-    public boolean checkField(int i) {
-
-        if (i > 0 || i < 10) {
-            return this.boardToVictoryCondition.get(i) == 'O' || this.boardToVictoryCondition.get(i) == 'X';
+        if (i > 0 && i < 10) {
+            return this.boardToVictoryCondition.get(i) == 'O' || this.boardToVictoryCondition.get(i) == 'X'||this.boardToVictoryCondition.get(i) == '+'||this.boardToVictoryCondition.get(i) == '-';
         } else {
-            throw new IndexOutOfBoundsException("Give a correct number 1-9");
+            throw new IndexOutOfBoundsException("Give a correct number");
         }
     }
 
@@ -81,13 +73,13 @@ class OXVictoryCondition {
 
 
     public boolean checkOccupiedAllFields() {
-        List tmp = boardToVictoryCondition.stream()
+        List<Character> tmp = boardToVictoryCondition.stream()
                 .filter(n -> n != 'O' && n != 'X')
                 .filter(n -> n != '-' && n != '+')
                 .collect(Collectors.toList());
-        if (tmp.size() < 1)
+        if (tmp.isEmpty())
             return true;
-        else return false;
+        return false;
 
     }
 
