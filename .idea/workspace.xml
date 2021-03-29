@@ -5,22 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b564bec5-e24d-433a-81f7-ba3bda948e89" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/e/2eb69e7f71aaf8596dccdffa9135d36743d242db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/b/6bb7be465901bf17b89e827d8c4f4b5a149a0bf0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/5/8531200817144a998fd2154a6b0e9a9e54020692" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/9/89f4a0cd37ecdde86ade612343d3fe1affb264d8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/1/c19e3c7505e65fb10dfa1d4a5217a294dcfb4590" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/3/d315621201987e51e29154035970890c53b475ca" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/0/e09370f15c0abd7b53cafb11a7b2c32f044523c8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/4/e441791a3c3f9ef83168fd8fa37ecdaf4d64afcf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/agatagolonka/ox/CommunicationWithUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/agatagolonka/ox/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/e/2eb69e7f71aaf8596dccdffa9135d36743d242db" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/e/2eb69e7f71aaf8596dccdffa9135d36743d242db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/b/6bb7be465901bf17b89e827d8c4f4b5a149a0bf0" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/b/6bb7be465901bf17b89e827d8c4f4b5a149a0bf0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/9/89f4a0cd37ecdde86ade612343d3fe1affb264d8" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/9/89f4a0cd37ecdde86ade612343d3fe1affb264d8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/1/c19e3c7505e65fb10dfa1d4a5217a294dcfb4590" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/1/c19e3c7505e65fb10dfa1d4a5217a294dcfb4590" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/3/d315621201987e51e29154035970890c53b475ca" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/3/d315621201987e51e29154035970890c53b475ca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/0/e09370f15c0abd7b53cafb11a7b2c32f044523c8" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/0/e09370f15c0abd7b53cafb11a7b2c32f044523c8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/4/e441791a3c3f9ef83168fd8fa37ecdaf4d64afcf" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/4/e441791a3c3f9ef83168fd8fa37ecdaf4d64afcf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OX.iml" beforeDir="false" afterPath="$PROJECT_DIR$/OX.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/agatagolonka/OX/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/agatagolonka/OX/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/agatagolonka/OX/OXBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/agatagolonka/OX/OXBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/agatagolonka/OX/OXMove.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/agatagolonka/OX/OXMove.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/agatagolonka/OX/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/agatagolonka/ox/Field.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/agatagolonka/OX/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/agatagolonka/ox/PlayOX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/agatagolonka/OX/OXBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/agatagolonka/ox/OXBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/agatagolonka/OX/OXMove.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/agatagolonka/ox/OXMove.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/agatagolonka/OX/OXVictoryCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/agatagolonka/ox/OXVictoryCondition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/github/agatagolonka/OX/OXBoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/agatagolonka/ox/OXBoardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/github/agatagolonka/OX/OXMoveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/agatagolonka/ox/OXMoveTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/github/agatagolonka/OX/OXVictoryConditionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/agatagolonka/ox/OXVictoryConditionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/agatagolonka/OX/Field.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/agatagolonka/OX/Field.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/agatagolonka/OX/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/agatagolonka/OX/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/agatagolonka/OX/OXBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/agatagolonka/OX/OXBoard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/agatagolonka/OX/OXMove.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/agatagolonka/OX/OXMove.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/agatagolonka/OX/OXVictoryCondition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/agatagolonka/OX/OXVictoryCondition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/github/agatagolonka/OX/OXBoardTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/github/agatagolonka/OX/OXBoardTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/github/agatagolonka/OX/OXMoveTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/github/agatagolonka/OX/OXMoveTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/github/agatagolonka/OX/OXVictoryConditionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/github/agatagolonka/OX/OXVictoryConditionTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +41,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="TestNG Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -55,6 +66,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
     <property name="extract.method.default.visibility" value="public" />
@@ -80,11 +92,20 @@
       <recent name="com.github.agatagolonka.OX" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.OXBoardTest.testName">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../../../Program Files/Java/jdk-15.0.2" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.github.agatagolonka.OX.Main" />
+      <option name="MAIN_CLASS_NAME" value="com.github.agatagolonka.ox.Main" />
+      <module name="OX" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlayOX" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../../../Program Files/Java/jdk-15.0.2" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.github.agatagolonka.ox.PlayOX" />
       <module name="OX" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -105,7 +126,7 @@
     <configuration name="OXBoardTest.testName" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OX" />
       <option name="PACKAGE_NAME" value="com.github.agatagolonka.OX" />
-      <option name="MAIN_CLASS_NAME" value="com.github.agatagolonka.OX.OXBoardTest" />
+      <option name="MAIN_CLASS_NAME" value="com.github.agatagolonka.ox.OXBoardTest" />
       <option name="METHOD_NAME" value="testName" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -117,7 +138,7 @@
     <configuration name="OXMoveTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OX" />
       <option name="PACKAGE_NAME" value="com.github.agatagolonka.OX" />
-      <option name="MAIN_CLASS_NAME" value="com.github.agatagolonka.OX.OXMoveTest" />
+      <option name="MAIN_CLASS_NAME" value="com.github.agatagolonka.ox.OXMoveTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -128,7 +149,7 @@
     <configuration name="OXVictoryConditionTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OX" />
       <option name="PACKAGE_NAME" value="com.github.agatagolonka.OX" />
-      <option name="MAIN_CLASS_NAME" value="com.github.agatagolonka.OX.OXVictoryConditionTest" />
+      <option name="MAIN_CLASS_NAME" value="com.github.agatagolonka.ox.OXVictoryConditionTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -138,26 +159,66 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.PlayOX" />
         <item itemvalue="TestNG.OXBoardTest.testName" />
         <item itemvalue="TestNG.OXMoveTest" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="TestNG.OXVictoryConditionTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="actualization" />
+    <option name="LAST_COMMIT_MESSAGE" value="actualization" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/github/agatagolonka/OX/OXVictoryCondition.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/github/agatagolonka/ox/OXVictoryCondition.java</url>
           <line>23</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/github/agatagolonka/OX/OXVictoryCondition.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/github/agatagolonka/ox/OXVictoryCondition.java</url>
           <line>25</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/github/agatagolonka/ox/CommunicationWithUser.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/github/agatagolonka/ox/CommunicationWithUser.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/github/agatagolonka/ox/CommunicationWithUser.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/github/agatagolonka/ox/CommunicationWithUser.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/github/agatagolonka/ox/CommunicationWithUser.java</url>
+          <line>81</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/github/agatagolonka/ox/CommunicationWithUser.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/github/agatagolonka/ox/CommunicationWithUser.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

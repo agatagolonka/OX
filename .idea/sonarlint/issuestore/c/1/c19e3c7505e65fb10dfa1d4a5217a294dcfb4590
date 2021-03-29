@@ -1,8 +1,8 @@
 
-Q	java:S106"9Replace this use of System.out or System.err by a logger.(·¸Ê×üÿÿÿÿ
-Q	java:S106"9Replace this use of System.out or System.err by a logger.(·¸Ê×üÿÿÿÿ
-]
-java:S2147"DCombine this catch with the one at line 15, which has the same body.(º—°®øÿÿÿÿ
-(
-java:S1700"Rename field "field"(Ñ«·´
-r	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(˜Ð»†úÿÿÿÿ
+_
+java:S2147"DCombine this catch with the one at line 15, which has the same body.(º—°®øÿÿÿÿ
+*
+java:S1700"Rename field "field"(Ñ«·´
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(˜Ð»†úÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(·¸Ê×üÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(·¸Ê×üÿÿÿÿ
