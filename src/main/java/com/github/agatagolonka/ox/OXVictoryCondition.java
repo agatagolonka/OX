@@ -10,7 +10,7 @@ class OXVictoryCondition {
     List<Character> boardToVictoryCondition;
     boolean isWinner = false;
 
-    public OXVictoryCondition(int size) {
+    OXVictoryCondition(int size) {
         this.size = size;
         this.boardToVictoryCondition = IntStream.rangeClosed(1, size * size + 1).boxed()
                 .map(i -> Character.forDigit(i, size * size + 1))
@@ -27,52 +27,25 @@ class OXVictoryCondition {
         }
     }
 
-    public void setBoardToVictoryCondition(int toReplace, char sign) {
+    void setBoardToVictoryCondition(int toReplace, char sign) {
         this.boardToVictoryCondition.set(toReplace, sign);
     }
 
-    public boolean checkWinner(VictoryLists victory) {
+    boolean checkWinner(VictoryLists victory, char sign) {
 
-        List<Integer> checkX = IntStream.rangeClosed(1, size * size - 1).boxed()
+        List<Integer> checkList = IntStream.rangeClosed(1, size * size - 1).boxed()
                 .map(n -> new PairNumber(n, boardToVictoryCondition.get(n)))
-                .filter(n -> n.getValue() == 'X')
+                .filter(n -> n.getValue() == sign)
                 .map(n -> n.getKey())
                 .collect(Collectors.toList());
 
-        List<Integer> checkO = IntStream.rangeClosed(1, size * size - 1).boxed()
-                .map(n -> new PairNumber(n, boardToVictoryCondition.get(n)))
-                .filter(n -> n.getValue() == 'O')
-                .map(n -> n.getKey())
-                .collect(Collectors.toList());
-
-        List<Integer> checkMinus = IntStream.rangeClosed(1, size * size - 1).boxed()
-                .map(n -> new PairNumber(n, boardToVictoryCondition.get(n)))
-                .filter(n -> n.getValue() == '-')
-                .map(n -> n.getKey())
-                .collect(Collectors.toList());
-
-        List<Integer> checkPlus = IntStream.rangeClosed(1, size * size - 1).boxed()
-                .map(n -> new PairNumber(n, boardToVictoryCondition.get(n)))
-                .filter(n -> n.getValue() == '+')
-                .map(n -> n.getKey())
-                .collect(Collectors.toList());
-
-        this.isWinner = victory.containsAll(checkX);
-        if (this.isWinner)
-            return this.isWinner;
-        this.isWinner = victory.containsAll(checkO);
-        if (this.isWinner)
-            return this.isWinner;
-        this.isWinner = victory.containsAll(checkMinus);
-        if (this.isWinner)
-            return this.isWinner;
-        this.isWinner = victory.containsAll(checkPlus);
+        this.isWinner = victory.containsAll(checkList);
 
         return this.isWinner;
     }
 
 
-    public boolean checkOccupiedAllFields() {
+    boolean checkOccupiedAllFields() {
         List<Character> tmp = boardToVictoryCondition.stream()
                 .filter(n -> n != 'O' && n != 'X'&&n!='-'&&n!='+')
                 .collect(Collectors.toList());
