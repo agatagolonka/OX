@@ -4,16 +4,16 @@ public class PairNumber {
     int key;
     char value;
 
-    public PairNumber(int key, char value) {
+    PairNumber(int key, char value) {
         this.key = key;
         this.value = value;
     }
 
-    public int getKey() {
+    int getKey() {
         return key;
     }
 
-    public char getValue() {
+    char getValue() {
         return value;
     }
 }
