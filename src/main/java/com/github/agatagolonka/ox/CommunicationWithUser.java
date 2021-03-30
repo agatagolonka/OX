@@ -4,7 +4,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 class CommunicationWithUser implements UserInterface {
-    public CommunicationWithUser() {
+    CommunicationWithUser() {
     }
 
     @Override
