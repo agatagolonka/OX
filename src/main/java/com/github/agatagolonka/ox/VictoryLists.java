@@ -7,7 +7,7 @@ import java.util.List;
 class VictoryLists {
     List<List<Integer>> victory;
 
-    public VictoryLists(Integer size) {
+    VictoryLists(Integer size) {
         if (size == 3) {
             this.victory = new ArrayList<>();
 
